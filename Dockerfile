@@ -1,7 +1,7 @@
  
 #改造aspnet core官方镜像
 
-FROM mcr.microsoft.com/dotnet/core/aspnet:3.0 AS runtime
+FROM mcr.microsoft.com/dotnet/aspnet:3.1 AS runtime
 WORKDIR /app
 
 #修改openssl.cnf是能正常链接SQL Server数据库
